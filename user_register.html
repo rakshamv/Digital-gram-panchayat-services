@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+	<title>USER_Registration</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<script src="js/jquery.min.js"> </script>
+	<script src="js/bootstrap.min.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<style>
+		body{
+			background-image:url("images/village_bg1.jpg");
+			padding:50px 0px;
+			background-size:cover;
+			
+		}
+		.panel{
+			background-color:rgba(0,0,0,0.2);
+		}
+
+		.panel-primary>.panel-heading {
+			
+			background-color: #031f23;
+			border-color: #031f23;
+		}
+		.panel-primary{
+			border-color:white;
+		}
+		.form{
+			height:600px;
+			padding-top:60px;
+		}
+		
+		
+		.row{
+			margin:0px;
+		}
+		label{
+			color: white;
+		}
+		.anch{
+			margin-bottom: 0px;
+		}
+	
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8">
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+						<div class="container-fluid demo">
+							<div class="navbar-header">
+								<a href="index.php" class="navbar navbar-brand anch" >Gram Panchayath</a>
+								<button class="navbar-toggle" data-toggle="collapse" data-target="#cl1">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span></button>
+							</div>
+							<div class="collapse navbar-collapse" id="cl1">
+								<ol class="nav navbar-nav navbar-right" >
+									<li class="active"><a href="index.php">HOME</a></li>
+								</ol>
+							</div>
+							
+						</div>
+					</nav>
+				
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+				<div class="container-fluid a ">
+					<div class="row">
+
+			<div class="form col-sm-offset-3 col-sm-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h1 class="panel-title" ><span class="fa fa-user-o"></span> &nbsp; User Registration</h1>
+					</div>
+					<div class="">
+					<div class="panel-body b2">
+						<form method="get" action="user_regdb.php" class="form-horizontal">
+							<div class="form-group">
+							<div>
+								<div class="col-sm-12">
+								<label>Name</label>
+								<input type="text" name="name"  class="form-control" required/>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div >
+								<div class="col-sm-6">
+								<label>E-mail</label>
+								<input type="email" name="email"  class="form-control" required/>
+								</div>
+								<div class="col-sm-6">
+								<label>Phone-number</label>
+								<input type="number" name="number"  class="form-control" required/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div>
+								<div class="col-sm-12">
+								<label>Address</label>
+								<textarea rows="5" name="address" cols="25" class="form-control" required></textarea>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div>
+								<div class="col-sm-6">
+								<label>City</label>
+								<select name="city"  class="form-control" required >
+									 <option value="" selected="selected">--Select--</option>
+									 <option value="mysore">Mysore</option>
+									 <option value="hunsur">Hunsur</option>
+									 <option value="nanjungud">Nanjungud</option>
+								     <option value="Mandya">Mandya</option>		
+								 </select>
+								</div>
+								<div class="col-sm-6">
+								<label>State</label>
+								<select name="state"  class="form-control" required >
+									 <option value="" selected="selected">--Select--</option>
+									 <option value="karnataka">Karnataka</option>
+						
+								 </select>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div>
+								<div class="col-sm-6">
+								<label>UserName</label>
+								<input type="text" name="username"  class="form-control" required />
+								</div>
+								<div class="col-sm-6">
+								<label>Password</label>
+								<input type="password" name="password"  class="form-control" required />
+								</div>
+							</div>
+						</div>
+						<input type="submit" value="Register" class="btn btn-block btn-success"/>
+					</form>
+					</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
